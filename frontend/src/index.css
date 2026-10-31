@@ -1612,3 +1612,19 @@ button {
   cursor: not-allowed;
   transform: none;
 }
+
+/* Resume upload layout fix */
+.card:has(.upload-box) {
+  text-align: center;
+}
+
+.card:has(.upload-box) .upload-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 25px auto;
+}
+
+.card:has(.upload-box) .primary-button {
+  display: block;
+  margin: 20px auto 0;
+}
