@@ -90,9 +90,9 @@ function App() {
   </div>
 </section>
 
-          <main className="container">
-            <ResumeUpload onResumeUploaded={handleResumeUploaded} />
-          </main>
+          <main className="upload-page">
+  <ResumeUpload onResumeUploaded={handleResumeUploaded} />
+</main>
         </>
       ) : (
         <main className="container">

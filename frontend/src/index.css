@@ -1730,3 +1730,81 @@ button {
     width: 100%;
   }
 }
+
+/* =========================
+   UPLOAD PAGE LAYOUT
+========================= */
+
+.upload-page {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 20px 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+/* Force upload card into a vertical centered layout */
+
+.upload-page .upload-card {
+  width: min(850px, 100%);
+  max-width: 850px;
+
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Center every direct element */
+
+.upload-page .upload-card > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Upload description */
+
+.upload-page .upload-card > p {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* File selector */
+
+.upload-page .upload-card input[type="file"] {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Button */
+
+.upload-page .upload-card .primary-button {
+  display: block;
+  margin: 20px auto 0;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .upload-page {
+    padding: 0 12px 40px;
+  }
+
+  .upload-page .upload-card {
+    width: 100%;
+    margin: 25px auto;
+    padding: 30px 20px;
+  }
+}
