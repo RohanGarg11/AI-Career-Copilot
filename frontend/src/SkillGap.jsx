@@ -42,7 +42,7 @@ function SkillGap({
       setLoading(true);
       setMessage("Analyzing your complete technical profile...");
 
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/skill-gap' ,{
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/skill-gap`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
