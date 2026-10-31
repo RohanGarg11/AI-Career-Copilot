@@ -1613,18 +1613,40 @@ button {
   transform: none;
 }
 
-/* Resume upload layout fix */
-.card:has(.upload-box) {
+
+
+/* Fix resume upload section */
+.card:has(input[type="file"]) {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.card:has(.upload-box) .upload-box {
+.card:has(input[type="file"]) h2 {
   width: 100%;
-  max-width: 700px;
-  margin: 25px auto;
+  text-align: center;
 }
 
-.card:has(.upload-box) .primary-button {
+.card:has(input[type="file"]) p {
+  width: 100%;
+  text-align: center;
+}
+
+.card:has(input[type="file"]) .upload-box {
+  width: 100%;
+  max-width: 650px;
+  margin: 25px auto;
+  box-sizing: border-box;
+}
+
+.card:has(input[type="file"]) .primary-button {
   display: block;
   margin: 20px auto 0;
 }
